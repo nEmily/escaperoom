@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScrollOpener : MonoBehaviour
 {
-    GameObject content; 
+    public GameObject content; 
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +15,13 @@ public class ScrollOpener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown("space")) {
+            if (content.activeSelf) {
+                Close();
+            } else {
+                Open();
+            }
+        }
     }
 
     public void Open()
