@@ -11,6 +11,14 @@ public class Hands : MonoBehaviour
     private float handTriggerState = 0;
     private float oldIndexTriggerState = 0;
 
+    private bool hasFeather = false;
+    private GameObject feather;
+
+    private GameObject scroll;
+
+    public Vector3 holdPosition = new Vector3(0, -0.025f, 0.03f);
+    public Vector3 holdRotation = new Vector3(0, 180, 0);
+
     public KeypadScript Keypad;
 
     // Update is called once per frame
@@ -19,6 +27,14 @@ public class Hands : MonoBehaviour
         oldIndexTriggerState = indexTriggerState;
         indexTriggerState = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, controller);
         handTriggerState = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, controller);
+
+        if (hasFeather)
+        {
+            if (handTriggerState < 0.6f)
+            {
+                releaseFeather();
+            }
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -97,5 +113,63 @@ public class Hands : MonoBehaviour
         {
             Keypad.PressRed();
         }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Feather"))
+        {
+            if (handTriggerState > 0.9f && !hasFeather)
+            {
+                print("Grabbing feather.");
+                Grab(feather);
+            }
+        }
+
+        if (other.CompareTag("Intro Letter"))
+        {
+            if (hasFeather)
+            {
+                updateScroll();
+            }
+        }
+    }
+
+    void Grab(GameObject obj)
+    {
+        hasFeather = true;
+        feather = obj;
+
+        feather.transform.parent = transform;
+
+        feather.transform.localPosition = holdPosition;
+        feather.transform.localEulerAngles = holdRotation;
+
+        feather.GetComponent<Rigidbody>().useGravity = false;
+        feather.GetComponent<Rigidbody>().isKinematic = true;
+    }
+
+    void releaseFeather()
+    {
+        hasFeather = false;
+
+        feather.transform.parent = null;
+
+        Rigidbody rigidbody = feather.GetComponent<Rigidbody>();
+
+        rigidbody.useGravity = true;
+        rigidbody.isKinematic = false;
+
+        rigidbody.velocity = OVRInput.GetLocalControllerVelocity(controller);
+
+        rigidbody.velocity = OVRInput.GetLocalControllerVelocity(controller);
+
+        hasFeather = false;
+        feather = null;
+    }
+
+    void updateScroll()
+    {
+        return;
     }
 }
