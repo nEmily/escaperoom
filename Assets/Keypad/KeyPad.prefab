@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2727982485616143543}
   - component: {fileID: 2727982485616143536}
   - component: {fileID: 2727982485616143537}
+  - component: {fileID: 8951043374790956208}
   m_Layer: 0
   m_Name: L button
-  m_TagString: Untagged
+  m_TagString: L button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -123,6 +124,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &8951043374790956208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982485616143542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982485627900418
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,9 +148,10 @@ GameObject:
   - component: {fileID: 2727982485627900419}
   - component: {fileID: 2727982485627900476}
   - component: {fileID: 2727982485627900477}
+  - component: {fileID: 1155733484136650286}
   m_Layer: 0
   m_Name: N button
-  m_TagString: Untagged
+  m_TagString: N button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,7 +207,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -246,6 +261,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &1155733484136650286
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982485627900418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982485725228461
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,9 +475,10 @@ GameObject:
   - component: {fileID: 2727982485887023661}
   - component: {fileID: 2727982485887023662}
   - component: {fileID: 2727982485887023663}
+  - component: {fileID: 8216046445922727615}
   m_Layer: 0
   m_Name: G button
-  m_TagString: Untagged
+  m_TagString: G button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -505,7 +534,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -559,6 +588,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &8216046445922727615
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982485887023660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982485978527120
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,9 +612,10 @@ GameObject:
   - component: {fileID: 2727982485978527121}
   - component: {fileID: 2727982485978527122}
   - component: {fileID: 2727982485978527123}
+  - component: {fileID: 7397177702015925880}
   m_Layer: 0
   m_Name: T button
-  m_TagString: Untagged
+  m_TagString: T button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -628,7 +671,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -682,6 +725,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &7397177702015925880
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982485978527120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982485981970814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,9 +1065,10 @@ GameObject:
   - component: {fileID: 2727982486140494245}
   - component: {fileID: 2727982486140494246}
   - component: {fileID: 2727982486140494247}
+  - component: {fileID: 3548778944605562762}
   m_Layer: 0
   m_Name: Green
-  m_TagString: Untagged
+  m_TagString: Green button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1120,6 +1177,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &3548778944605562762
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982486140494244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982486150206074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,9 +1201,10 @@ GameObject:
   - component: {fileID: 2727982486150206075}
   - component: {fileID: 2727982486150206068}
   - component: {fileID: 2727982486150206069}
+  - component: {fileID: 4957217543804454169}
   m_Layer: 0
   m_Name: E button
-  m_TagString: Untagged
+  m_TagString: E button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1189,7 +1260,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1243,6 +1314,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &4957217543804454169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982486150206074}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982486202500804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,9 +1486,10 @@ GameObject:
   - component: {fileID: 2727982486338177930}
   - component: {fileID: 2727982486338177931}
   - component: {fileID: 2727982486338177924}
+  - component: {fileID: 6449140397029079640}
   m_Layer: 0
   m_Name: Red
-  m_TagString: Untagged
+  m_TagString: Red button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1513,6 +1598,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &6449140397029079640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982486338177929}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982486357254878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,9 +1701,10 @@ GameObject:
   - component: {fileID: 2727982486415042546}
   - component: {fileID: 2727982486415042547}
   - component: {fileID: 2727982486415042540}
+  - component: {fileID: 8250052833626423595}
   m_Layer: 0
   m_Name: U button
-  m_TagString: Untagged
+  m_TagString: U button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1661,7 +1760,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1715,6 +1814,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &8250052833626423595
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982486415042545}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982486420502053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,9 +1934,10 @@ GameObject:
   - component: {fileID: 2727982486560958935}
   - component: {fileID: 2727982486560958928}
   - component: {fileID: 2727982486560958929}
+  - component: {fileID: 8021936035665712223}
   m_Layer: 0
   m_Name: S button
-  m_TagString: Untagged
+  m_TagString: S button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1880,7 +1993,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1934,6 +2047,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &8021936035665712223
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982486560958934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982486563473946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,9 +2229,10 @@ GameObject:
   - component: {fileID: 2727982486669350941}
   - component: {fileID: 2727982486669350942}
   - component: {fileID: 2727982486669350943}
+  - component: {fileID: 8786643043080915246}
   m_Layer: 0
   m_Name: A button
-  m_TagString: Untagged
+  m_TagString: A button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2161,7 +2288,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2215,6 +2342,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &8786643043080915246
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982486669350940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982486695880076
 GameObject:
   m_ObjectHideFlags: 0
@@ -2606,9 +2746,10 @@ GameObject:
   - component: {fileID: 2727982487026544020}
   - component: {fileID: 2727982487026544021}
   - component: {fileID: 2727982487026544022}
+  - component: {fileID: 3754143018190144916}
   m_Layer: 0
   m_Name: B button
-  m_TagString: Untagged
+  m_TagString: B button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2664,7 +2805,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2715,20 +2856,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &3754143018190144916
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982487026544027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982487043336440
 GameObject:
   m_ObjectHideFlags: 0
@@ -2918,9 +3061,10 @@ GameObject:
   - component: {fileID: 2727982487064983330}
   - component: {fileID: 2727982487064983331}
   - component: {fileID: 2727982487064983516}
+  - component: {fileID: 5018457030837633617}
   m_Layer: 0
   m_Name: H button
-  m_TagString: Untagged
+  m_TagString: H button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2976,7 +3120,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3030,6 +3174,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &5018457030837633617
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982487064983329}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982487067417190
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,9 +3357,10 @@ GameObject:
   - component: {fileID: 2727982487139034394}
   - component: {fileID: 2727982487139034395}
   - component: {fileID: 2727982487139034388}
+  - component: {fileID: 8405472949799077357}
   m_Layer: 0
   m_Name: I button
-  m_TagString: Untagged
+  m_TagString: I button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3258,7 +3416,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3312,6 +3470,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &8405472949799077357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982487139034393}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982487189111588
 GameObject:
   m_ObjectHideFlags: 0
@@ -3593,9 +3764,10 @@ GameObject:
   - component: {fileID: 2727982487347240245}
   - component: {fileID: 2727982487347240246}
   - component: {fileID: 2727982487347240247}
+  - component: {fileID: 6962392923470769068}
   m_Layer: 0
   m_Name: Y button
-  m_TagString: Untagged
+  m_TagString: Y button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3651,7 +3823,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3705,6 +3877,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &6962392923470769068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982487347240244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982487360479886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3745,7 +3930,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2727982487360479886}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a9e7aa96d7d4178a8d2236adf7b4b1, type: 3}
+  m_Script: {fileID: 11500000, guid: c46260c495040410a97de5556e7e1ea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   curPassword: THEGOATISBILLY
@@ -4103,7 +4288,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 440096d134ba8486bb2c397c8031ef8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4292,9 +4477,10 @@ GameObject:
   - component: {fileID: 2727982487666404661}
   - component: {fileID: 2727982487666404662}
   - component: {fileID: 2727982487666404663}
+  - component: {fileID: 5628927554149106650}
   m_Layer: 0
   m_Name: O button
-  m_TagString: Untagged
+  m_TagString: O button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4350,7 +4536,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6b1d3aa4c950b4e219ace11602bac08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4404,6 +4590,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &5628927554149106650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727982487666404660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.8200001, z: -0.02}
+  m_Center: {x: 0.000000834465, y: -0.0000019073486, z: -0.001}
 --- !u!1 &2727982487678693293
 GameObject:
   m_ObjectHideFlags: 0

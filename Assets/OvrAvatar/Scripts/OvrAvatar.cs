@@ -55,6 +55,8 @@ public class OvrAvatar : MonoBehaviour {
     public Shader SurfaceShader;
     public Shader SurfaceShaderSelfOccluding;
     public Shader SurfaceShaderPBS;
+
+    public KeypadScript Keypad;
     
     const float PacketDurationSeconds = 1 / 45.0f;
     OvrAvatarPacket currentPacket;
@@ -580,6 +582,84 @@ public class OvrAvatar : MonoBehaviour {
                 // Open a new packet
                 currentPacket = new OvrAvatarPacket(intermediatePose);
             }
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "B button")
+        {
+            Keypad.PressB();
+        }
+
+        else if (collision.gameObject.tag == "O button")
+        {
+            Keypad.PressO();
+        }
+
+        else if (collision.gameObject.tag == "L button")
+        {
+            Keypad.PressL();
+        }
+
+        else if (collision.gameObject.tag == "G button")
+        {
+            Keypad.PressG();
+        }
+
+        else if (collision.gameObject.tag == "I button")
+        {
+            Keypad.PressI();
+        }
+
+        else if (collision.gameObject.tag == "H button")
+        {
+            Keypad.PressH();
+        }
+
+        else if (collision.gameObject.tag == "T button")
+        {
+            Keypad.PressT();
+        }
+
+        else if (collision.gameObject.tag == "A button")
+        {
+            Keypad.PressA();
+        }
+
+        else if (collision.gameObject.tag == "Y button")
+        {
+            Keypad.PressY();
+        }
+
+        else if (collision.gameObject.tag == "E button")
+        {
+            Keypad.PressE();
+        }
+
+        else if (collision.gameObject.tag == "S button")
+        {
+            Keypad.PressS();
+        }
+
+        else if (collision.gameObject.tag == "N button")
+        {
+            Keypad.PressN();
+        }
+
+        else if (collision.gameObject.tag == "U button")
+        {
+            Keypad.PressU();
+        }
+
+        else if (collision.gameObject.tag == "Green button")
+        {
+            Keypad.PressGreen();
+        }
+
+        else if (collision.gameObject.tag == "Red button")
+        {
+            Keypad.PressRed();
         }
     }
 }

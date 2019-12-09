@@ -47,67 +47,81 @@ public class KeypadScript : MonoBehaviour
         GreenButton.GetComponent<Button>().onClick.AddListener(PressGreen);
     }
 
-    void PressB() //Press Button One on Keypad
+    public void PressB() //Press Button One on Keypad
     {
         input = input + "B";
+        Debug.Log(input);
     }
 
-    void PressO() //Press Button Two on Keypad
+    public void PressO() //Press Button Two on Keypad
     {
         input = input + "O";
+        Debug.Log(input);
     }
 
-    void PressL() //Press Button Three on Keypad
+    public void PressL() //Press Button Three on Keypad
     {
         input = input + "L";
+        Debug.Log(input);
     }
 
-    void PressG() //Press Button Four on Keypad
+    public void PressG() //Press Button Four on Keypad
     {
         input = input + "G";
+        Debug.Log(input);
     }
 
-    void PressI() //Press Button Five on Keypad
+    public void PressI() //Press Button Five on Keypad
     {
         input = input + "I";
+        Debug.Log(input);
     }
-    void PressH() //Press Button Six on Keypad
+    public void PressH() //Press Button Six on Keypad
     {
         input = input + "H";
+        Debug.Log(input);
     }
-    void PressT() //Press Button Seven on Keypad
+    public void PressT() //Press Button Seven on Keypad
     {
         input = input + "T";
+        Debug.Log(input);
     }
-    void PressA() //Press Button Eight on Keypad
+    public void PressA() //Press Button Eight on Keypad
     {
         input = input + "A";
+        Debug.Log(input);
     }
-    void PressY() //Press Button Nine on Keypad
+    public void PressY() //Press Button Nine on Keypad
     {
         input = input + "Y";
+        Debug.Log(input);
     }
-    void PressE() //Press Button Zero on Keypad
+    public void PressE() //Press Button Zero on Keypad
     {
         input = input + "E";
+        Debug.Log(input);
     }
-    void PressS() //Press Button Zero on Keypad
+    public void PressS() //Press Button Zero on Keypad
     {
         input = input + "S";
+        Debug.Log(input);
     }
-    void PressN() //Press Button Zero on Keypad
+    public void PressN() //Press Button Zero on Keypad
     {
         input = input + "N";
+        Debug.Log(input);
     }
-    void PressU() //Press Button Zero on Keypad
+    public void PressU() //Press Button Zero on Keypad
     {
         input = input + "U";
+        Debug.Log(input);
     }
-    void PressRed() // When you press clear 
+    public void PressRed() // When you press clear 
     {
         input = ""; // reset the input string to empty
+        Debug.Log(input);
     }
-    void PressGreen()        //Press the GreenButton(GoButton)
+    public void PressGreen()        //Press the GreenButton(GoButton)
     {
         if (input == curPassword)        // if it is right 
         {
