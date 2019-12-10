@@ -16,10 +16,15 @@ public class Hands : MonoBehaviour
 
     private GameObject scroll;
 
+    private bool hasUk = false;
+    private GameObject ukulele;
+
     public Vector3 holdPosition = new Vector3(0, -0.025f, 0.03f);
     public Vector3 holdRotation = new Vector3(0, 180, 0);
 
     public KeypadScript Keypad;
+
+    public AudioSource ukuleleSound;
 
     // Update is called once per frame
     void Update()
@@ -33,6 +38,15 @@ public class Hands : MonoBehaviour
             if (handTriggerState < 0.6f)
             {
                 releaseFeather();
+            }
+        }
+
+        if (hasUk)
+        {
+            //display text, "Press to play"
+            if (Input.GetButtonDown("Space"))
+            {
+                ukuleleSound.Play(0);
             }
         }
     }
@@ -133,20 +147,46 @@ public class Hands : MonoBehaviour
                 updateScroll();
             }
         }
+
+        else if (other.CompareTag("Ukulele"))
+        {
+            if (handTriggerState > 0.9f && !hasUk)
+            {
+                print("Grabbing ukulele.");
+                Grab(ukulele);
+            }
+        }
     }
 
     void Grab(GameObject obj)
     {
-        hasFeather = true;
-        feather = obj;
+        if (obj.tag == "feather")
+        {
+            hasFeather = true;
+            feather = obj;
 
-        feather.transform.parent = transform;
+            feather.transform.parent = transform;
 
-        feather.transform.localPosition = holdPosition;
-        feather.transform.localEulerAngles = holdRotation;
+            feather.transform.localPosition = holdPosition;
+            feather.transform.localEulerAngles = holdRotation;
 
-        feather.GetComponent<Rigidbody>().useGravity = false;
-        feather.GetComponent<Rigidbody>().isKinematic = true;
+            feather.GetComponent<Rigidbody>().useGravity = false;
+            feather.GetComponent<Rigidbody>().isKinematic = true;
+        }
+
+        else if (obj.tag == "ukulele")
+        {
+            hasUk = true;
+            ukulele = obj;
+
+            ukulele.transform.parent = transform;
+
+            ukulele.transform.localPosition = holdPosition;
+            ukulele.transform.localEulerAngles = holdRotation;
+
+            ukulele.GetComponent<Rigidbody>().useGravity = false;
+            ukulele.GetComponent<Rigidbody>().isKinematic = true;
+        }
     }
 
     void releaseFeather()
@@ -171,5 +211,13 @@ public class Hands : MonoBehaviour
     void updateScroll()
     {
         return;
+    }
+
+    void OnGUI()
+    {
+        if (hasUk == true)
+        {
+            GUI.Box(new Rect(140, Screen.height - 50, Screen.width - 300, 120), ("Press B to play"));
+        }
     }
 }
