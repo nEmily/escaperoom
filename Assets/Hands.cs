@@ -18,6 +18,7 @@ public class Hands : MonoBehaviour
 
     private bool hasUk = false;
     private GameObject ukulele;
+    private GameObject holding;
 
     public Vector3 holdPosition = new Vector3(0, -0.025f, 0.03f);
     public Vector3 holdRotation = new Vector3(0, 180, 0);
@@ -33,14 +34,6 @@ public class Hands : MonoBehaviour
         indexTriggerState = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, controller);
         handTriggerState = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, controller);
 
-        if (hasFeather)
-        {
-            if (handTriggerState < 0.6f)
-            {
-                releaseFeather();
-            }
-        }
-
         if (hasUk)
         {
             //display text, "Press to play"
@@ -49,7 +42,19 @@ public class Hands : MonoBehaviour
                 ukuleleSound.Play(0);
             }
         }
+
+        if (handTriggerState < 0.6f) {
+            if (hasFeather){
+             hasFeather = false   
+        }
+        else if (hasUk){
+            hasUk = false
+        }
+            release()
+        }
     }
+    
+    
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -170,15 +175,14 @@ public class Hands : MonoBehaviour
             obj.transform.localEulerAngles = holdRotation;
             obj.GetComponent<Rigidbody>().useGravity = false;
             obj.GetComponent<Rigidbody>().isKinematic = true;
+            holding = obj
     }
 
-    void releaseFeather()
+    void release()
     {
-        hasFeather = false;
+        holding.transform.parent = null;
 
-        feather.transform.parent = null;
-
-        Rigidbody rigidbody = feather.GetComponent<Rigidbody>();
+        Rigidbody rigidbody = holding.GetComponent<Rigidbody>();
 
         rigidbody.useGravity = true;
         rigidbody.isKinematic = false;
@@ -186,9 +190,6 @@ public class Hands : MonoBehaviour
         rigidbody.velocity = OVRInput.GetLocalControllerVelocity(controller);
 
         rigidbody.velocity = OVRInput.GetLocalControllerVelocity(controller);
-
-        hasFeather = false;
-        feather = null;
     }
 
     void updateScroll()
