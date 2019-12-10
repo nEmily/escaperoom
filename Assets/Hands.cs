@@ -45,12 +45,12 @@ public class Hands : MonoBehaviour
 
         if (handTriggerState < 0.6f) {
             if (hasFeather){
-             hasFeather = false   
+             hasFeather = false;   
         }
         else if (hasUk){
-            hasUk = false
+            hasUk = false;
         }
-            release()
+            release();
         }
     }
     
@@ -175,7 +175,7 @@ public class Hands : MonoBehaviour
             obj.transform.localEulerAngles = holdRotation;
             obj.GetComponent<Rigidbody>().useGravity = false;
             obj.GetComponent<Rigidbody>().isKinematic = true;
-            holding = obj
+            holding = obj;
     }
 
     void release()
