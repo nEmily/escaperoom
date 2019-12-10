@@ -54,7 +54,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Distance.cs" />
+     <Compile Include="Assets\Hands.cs" />
      <Compile Include="Assets\keypad.cs" />
+     <Compile Include="Assets\Keypad\keypad.cs" />
+     <Compile Include="Assets\Keypad\KeypadScript.cs" />
      <Compile Include="Assets\Keypad\Script\Playsound.cs" />
      <Compile Include="Assets\KeypadScript.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRBoundary.cs" />

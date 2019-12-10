@@ -136,6 +136,7 @@ public class Hands : MonoBehaviour
             if (handTriggerState > 0.9f && !hasFeather)
             {
                 print("Grabbing feather.");
+                hasFeather = true;
                 Grab(feather);
             }
         }
@@ -152,41 +153,23 @@ public class Hands : MonoBehaviour
         {
             if (handTriggerState > 0.9f && !hasUk)
             {
+                hasUk = true;
                 print("Grabbing ukulele.");
                 Grab(ukulele);
             }
+        }
+        else {
+            Grab(other.gameObject);
         }
     }
 
     void Grab(GameObject obj)
     {
-        if (obj.tag == "feather")
-        {
-            hasFeather = true;
-            feather = obj;
-
-            feather.transform.parent = transform;
-
-            feather.transform.localPosition = holdPosition;
-            feather.transform.localEulerAngles = holdRotation;
-
-            feather.GetComponent<Rigidbody>().useGravity = false;
-            feather.GetComponent<Rigidbody>().isKinematic = true;
-        }
-
-        else if (obj.tag == "ukulele")
-        {
-            hasUk = true;
-            ukulele = obj;
-
-            ukulele.transform.parent = transform;
-
-            ukulele.transform.localPosition = holdPosition;
-            ukulele.transform.localEulerAngles = holdRotation;
-
-            ukulele.GetComponent<Rigidbody>().useGravity = false;
-            ukulele.GetComponent<Rigidbody>().isKinematic = true;
-        }
+            obj.transform.parent = transform;
+            obj.transform.localPosition = holdPosition;
+            obj.transform.localEulerAngles = holdRotation;
+            obj.GetComponent<Rigidbody>().useGravity = false;
+            obj.GetComponent<Rigidbody>().isKinematic = true;
     }
 
     void releaseFeather()
