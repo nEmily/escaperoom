@@ -55,8 +55,7 @@ public class Hands : MonoBehaviour
     }
     
     
-
-    private void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "B button")
         {
